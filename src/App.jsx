@@ -2,6 +2,8 @@ import { useState } from 'react'
 import './App.css'
 // import DaisyNav from './Components/Daisy nav/DaisyNav';
 import Nav from './Components/Nav/Nav';
+import Options from './Components/PriceOptions/PriceOptions';
+
 
 function App() {
   
@@ -21,12 +23,12 @@ function App() {
     <>
       <div>
         <Nav></Nav>
+        
         {/* <DaisyNav></DaisyNav> */}
-        <h3>counnt : {count} </h3>
-        <button onClick={handlButton}>
-          click me
-        </button>
+        
+        
 
+       
 
         <div className="stats shadow">
   
@@ -63,7 +65,7 @@ function App() {
   
 </div>
 
-
+<Options></Options>
 <div className="hero min-h-screen bg-base-200">
   <div className="hero-content flex-col lg:flex-row-reverse">
     <div className="text-center lg:text-left">
@@ -95,7 +97,10 @@ function App() {
   </div>
 </div>
 
-
+<h3>counnt : {count} </h3>
+        <button onClick={handlButton}>
+          click me
+        </button>
       </div>
     </>
   )
